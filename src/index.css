@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Force Tailwind-like dark mode manually */
+.dark body {
+    background-color: #303238; /* gray-900 */
+    color: white;
+}
