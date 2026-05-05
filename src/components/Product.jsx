@@ -22,7 +22,7 @@ const Product = () => {
                 setProduct(productData);
 
                 // ✅ Check the right object, use consistent /api prefix
-                if (fetchedProduct?.imageName) {
+                if (productData) {
                     const imgRes = await axios.get(
                         `/product/${id}/image`,
                         { responseType: "blob" }

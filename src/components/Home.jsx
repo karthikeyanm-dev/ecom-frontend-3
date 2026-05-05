@@ -22,7 +22,6 @@ const Home = () => {
                             const imgRes = await fetch(
                                 `http://localhost:8080/api/product/${product.id}/image`
                             );
-
                             const blob = await imgRes.blob();
                             const imageUrl = URL.createObjectURL(blob);
 
@@ -70,7 +69,7 @@ const Home = () => {
                     to={`/product/${product.id}`}
                     style={{ textDecoration: "none", color: "inherit" }}
                 >
-                <ProductCards key={product.productId} product={product}/>
+                <ProductCards key={product.id} product={product}/>
             </Link>
             ))}
         </div>
