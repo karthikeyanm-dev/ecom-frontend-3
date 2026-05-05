@@ -17,10 +17,9 @@ const Product = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const res = await axios.get(`/product/${id}`);
+                const res = await axios.get(`/products/${id}`);
                 const productData = res.data;
-                const fetchedProduct = productData["product"];
-                setProduct(fetchedProduct);
+                setProduct(productData);
 
                 // ✅ Check the right object, use consistent /api prefix
                 if (fetchedProduct?.imageName) {
