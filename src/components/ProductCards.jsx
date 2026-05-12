@@ -6,7 +6,7 @@ const ProductCards = ({ product }) => {
         <div className="group relative bg-white dark:bg-gray-900 rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden border dark:border-gray-800">
 
             {/* IMAGE */}
-            <div className="h-40 bg-gray-100 dark:bg-gray-800 flex items-center justify-center overflow-hidden">
+            <div className="h-75  bg-gray-100 dark:bg-gray-800 flex items-center justify-center overflow-hidden">
                 {product.imageUrl ? (
                     <img
                         src={product.imageUrl || "/no-image.png"}
@@ -19,7 +19,7 @@ const ProductCards = ({ product }) => {
             </div>
 
             {/* Top Accent */}
-            <div className="h-1 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+            <div className="h-1 bg-gradient-to-r from-blue-500 to-green-500"></div>
 
             <div className="p-5">
 
